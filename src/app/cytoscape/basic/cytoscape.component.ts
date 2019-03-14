@@ -63,7 +63,7 @@ export class CytoscapeBasicComponent implements OnInit {
       },
       position: { x: 0, y: 0 }
     });
-    let eles: any = _cy.add([
+    const eles: any = _cy.add([
       { group: 'nodes', data: { id: 'n0' }, position: { x: 0, y: 50 } },
       { group: 'nodes', data: { id: 'n1' }, position: { x: 100, y: 50 } },
       { group: 'edges', data: { id: 'e0', source: 'n0', target: 'n1' } }
