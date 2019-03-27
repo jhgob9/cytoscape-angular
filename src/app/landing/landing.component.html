@@ -1,4 +1,15 @@
 <div class="wrap">
-	<a [routerLink]="['/login']" mat-flat-button color="primary">로그인</a>
-	<a [routerLink]="['/signup']" mat-flat-button color="primary">회원가입</a>
+	<div *ngIf="isAuthenticated; then doSomething; else doSomethingElse;"></div>
+	<ng-template #doSomething>
+		<div class="logined">
+			<p><em>{{user.email}}</em>로 로그인되었습니다.</p>
+			<button (click)="logOut()" mat-flat-button color="primary">로그아웃</button>
+			<a [routerLink]="['/status']" mat-flat-button color="primary">Status</a>
+		</div>
+	</ng-template>
+	<ng-template #doSomethingElse>
+		<a [routerLink]="['/login']" mat-flat-button color="primary">로그인</a>
+		<a [routerLink]="['/signup']" mat-flat-button color="primary">회원가입</a>
+		<a [routerLink]="['/status']" mat-flat-button color="primary">Status</a>
+	</ng-template>
 </div>

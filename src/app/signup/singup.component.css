@@ -22,3 +22,6 @@ button {
 .btn_cancel{
   margin-left: 10px;
 }
+.error {
+  color: red;
+}

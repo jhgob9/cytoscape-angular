@@ -3,12 +3,18 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
-.wrap a {
+.wrap a,
+.wrap .logined a,
+.wrap .logined button {
   width: 100px;
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   margin: 0 10px;
+}
+.wrap .logined {
+  width: 100%;
+  text-align: center;
 }

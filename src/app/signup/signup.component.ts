@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { User } from './../models/user';
-import { AppState, selectAuthState } from './../store/app.states';
-import { LogIn } from '../store/actions/auth.actions';
+import { User } from '../models/user';
+import { AppState, selectAuthState } from '../store/app.states';
+import { SignUp } from '../store/actions/auth.actions';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-singup',
+  templateUrl: './singup.component.html',
+  styleUrls: ['./singup.component.css']
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit {
   user: User = new User();
   getState: Observable<any>;
   errorMessage: string | null;
@@ -33,7 +33,8 @@ export class LoginComponent implements OnInit {
       email: this.user.email,
       password: this.user.password
     };
-    this.store.dispatch(new LogIn(payload));
+    console.log(payload);
+    this.store.dispatch(new SignUp(payload));
   }
 
 }
