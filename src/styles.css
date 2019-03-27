@@ -4,3 +4,11 @@ body{padding:0;height:100%}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+fieldset{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+legend{position: absolute;height: 0;width: 0;overflow: hidden;font-size: 0;line-height: 0;}
