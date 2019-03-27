@@ -1,0 +1,14 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.wrap a {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 0 10px;
+}

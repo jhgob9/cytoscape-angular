@@ -1,12 +1,17 @@
-<form action="" class="login_form">
+<form (ngSubmit)="onSubmit()" ngNativeValidate class="login_form">
 	<fieldset>
 		<legend>로그인</legend>
 		<mat-form-field class="item">
-			<input matInput placeholder="아이디">
+			<input type="email" [(ngModel)]="user.email" name="email" id="email" required matInput placeholder="이메일">
 		</mat-form-field>
 		<mat-form-field class="item">
-			<input type="password" matInput placeholder="비밀번호">
+			<input type="password" [(ngModel)]="user.password" name="password" id="password" required matInput
+			  placeholder="비밀번호">
 		</mat-form-field>
 		<button class="btn_submit" mat-flat-button color="primary">로그인</button>
+		<p>
+		  <span>아직 계정을 없나요?</span>
+		  <a [routerLink]="['/signup']">회원가입</a>
+		</p>
 	</fieldset>
 </form>
