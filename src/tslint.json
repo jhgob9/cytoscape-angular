@@ -13,6 +13,7 @@
       "app",
       "kebab-case"
     ],
-    "indent": false
+    "indent": false,
+    "variable-name": false
   }
 }

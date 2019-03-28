@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as cytoscape from 'cytoscape';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-cytoscapebasic',

@@ -16,6 +16,7 @@ import { CytoscapeBasicComponent } from './cytoscape/basic/cytoscape.component';
 import { AuthService } from './services/auth.service';
 import { AuthEffects } from './store/effects/auth.effects';
 import { reducers } from './store/app.states';
+import { SubtitleService } from 'src/app/services/subtitle.service';
 import {
   TokenInterceptor, ErrorInterceptor
 } from './services/token.interceptor';
@@ -29,6 +30,8 @@ import { StatusComponent } from './components/status/status.component';
 import { CymainComponent } from './cytoscape/cymain/cymain.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.component';
+import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from
     SignupComponent,
     LandingComponent,
     StatusComponent,
-    CymainComponent
+    CymainComponent,
+    ColajsGraphComponent,
+    TokyoRailwaysComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +75,8 @@ import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from
       provide: HTTP_INTERCEPTORS,
       useClass: ErrorInterceptor,
       multi: true
-    }
+    },
+    SubtitleService
   ],
   bootstrap: [AppComponent]
 })

@@ -26,7 +26,15 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/tippy.js/umd/index.all.js",
+              "node_modules/cytoscape/dist/cytoscape.min.js",
+              "node_modules/webcola/WebCola/cola.min.js",
+              "node_modules/cytoscape-cola/cytoscape-cola.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/cytoscape-popper/cytoscape-popper.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
