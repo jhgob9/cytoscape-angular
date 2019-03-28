@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
+
 import { AppState, selectAuthState } from '../store/app.states';
 import { LogOut } from '../store/actions/auth.actions';
 
@@ -17,12 +20,19 @@ export class LandingComponent implements OnInit {
   errorMessage = null;
 
   constructor(
-    private store: Store<AppState>
+    private store: Store<AppState>,
+    public auth: AuthService,
+    public router: Router
   ) {
     this.getState = this.store.select(selectAuthState);
   }
 
   ngOnInit() {
+    if (this.auth.getToken()) {
+      this.router.navigate(['/cy']);
+    } else {
+      this.router.navigate(['/login']);
+    }
     this.getState.subscribe((state) => {
       this.isAuthenticated = state.isAuthenticated;
       this.user = state.user;

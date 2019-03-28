@@ -44,7 +44,7 @@ export class AuthEffects {
 		ofType(AuthActionTypes.LOGIN_SUCCESS),
 		tap((user) => {
 			localStorage.setItem('token', user.payload.token);
-			this.router.navigateByUrl('/');
+			this.router.navigateByUrl('/cy');
 		})
 	);
 	@Effect({ dispatch: false })
@@ -97,11 +97,11 @@ export class AuthEffects {
 		})
 	);
 
-	@Effect({ dispatch: false })
+	/* @Effect({ dispatch: false })
 	GetStatus: Observable < any > = this.actions.pipe(
 		ofType(AuthActionTypes.GET_STATUS),
 		switchMap(payload => {
 			return this.authService.getStatus();
 		})
-	);
+	); */
 }

@@ -26,6 +26,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { StatusComponent } from './components/status/status.component';
+import { CymainComponent } from './cytoscape/cymain/cymain.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { StatusComponent } from './components/status/status.component';
     LoginComponent,
     SignupComponent,
     LandingComponent,
-    StatusComponent
+    StatusComponent,
+    CymainComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,12 @@ import { StatusComponent } from './components/status/status.component';
     HttpClientModule,
     StoreModule.forRoot(reducers, {}),
     EffectsModule.forRoot([AuthEffects]),
-    RouterModule
+    RouterModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [
     AuthService,
