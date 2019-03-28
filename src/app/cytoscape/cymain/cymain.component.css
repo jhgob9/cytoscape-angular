@@ -15,3 +15,10 @@
   top: 0;
   z-index: 1;
 }
+
+.btn_logout{
+  position: absolute;
+  right:10px;
+  top:14px;
+  z-index: 1;
+}
