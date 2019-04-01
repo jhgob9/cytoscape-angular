@@ -12,3 +12,12 @@ fieldset{
 }
 
 legend{position: absolute;height: 0;width: 0;overflow: hidden;font-size: 0;line-height: 0;}
+
+.tippy-popper .tip-link {
+  display: block;
+}
+
+.tippy-tooltip a,
+.tippy-tooltip a:hover {
+  color: #8BB0D0;
+}

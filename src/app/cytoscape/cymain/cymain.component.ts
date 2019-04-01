@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { Store } from '@ngrx/store';
 import { map } from 'rxjs/operators';
+import { Store } from '@ngrx/store';
 import { SubtitleService } from 'src/app/services/subtitle.service';
 import { AppState, selectAuthState } from './../../store/app.states';
 import { LogOut } from './../../store/actions/auth.actions';
