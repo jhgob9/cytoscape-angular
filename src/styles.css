@@ -21,3 +21,32 @@ legend{position: absolute;height: 0;width: 0;overflow: hidden;font-size: 0;line-
 .tippy-tooltip a:hover {
   color: #8BB0D0;
 }
+
+#clear {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  margin: 0.25em;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body.has-start #clear {
+  visibility: visible;
+}
+
+#end {
+  display: none;
+}
+
+body.has-start:not(.has-end) #end {
+  display: inline;
+}
+
+body.has-start:not(.has-end) #start {
+  display: none;
+}
+
+body.calc #loading {
+  display: block;
+}

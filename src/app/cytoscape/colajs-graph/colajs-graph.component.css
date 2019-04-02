@@ -98,3 +98,13 @@ a:hover {
     right: 0;
   }
 }
+
+.mat-icon-button{
+  vertical-align: top;
+}
+.btn_color_red{
+  background-color: red;
+}
+.node_red{
+  background-color: red;
+}
