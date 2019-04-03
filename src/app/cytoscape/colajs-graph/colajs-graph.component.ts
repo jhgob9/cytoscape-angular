@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { forkJoin, fromEvent } from 'rxjs';
 import { pluck } from 'rxjs/operators';
 
-
 // import * as cytoscape from 'cytoscape';
 // import * as _ from 'lodash';
 // import * as tippy from 'tippy.js';

@@ -3,3 +3,9 @@
   height: 100%;
   background-color: #000;
 }
+.dialog{
+  position: absolute;
+  right:10px;
+  top:80px;
+  color:#fff;
+}

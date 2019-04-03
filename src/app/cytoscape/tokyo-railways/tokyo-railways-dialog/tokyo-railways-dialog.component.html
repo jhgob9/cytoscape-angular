@@ -1,0 +1,13 @@
+<div mat-dialog-content>
+	<p>Choice bg color</p>
+	<!-- <input type="hidden" id="hiddenValue" [(ngModel)]="data.color"> -->
+	<button mat-mini-fab style="background-color:white;color:#000" value="white"
+		(click)="changeColor($event)">White</button>
+	<button mat-mini-fab style="background-color:gray;color:#000" value="gray"
+		(click)="changeColor($event)">Gray</button>
+		<button mat-mini-fab style="background-color:black;color:#fff" value="black"
+		  (click)="changeColor($event)">Black</button>
+</div>
+<div mat-dialog-actions align="center">
+	<button mat-button (click)="onNoClick()">Cancel</button>
+</div>
