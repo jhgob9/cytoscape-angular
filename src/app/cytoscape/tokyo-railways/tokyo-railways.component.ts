@@ -80,9 +80,9 @@ export class TokyoRailwaysComponent implements OnInit {
           elements,
           motionBlur: true,
           selectionType: 'single',
-          boxSelectionEnabled: false
+          boxSelectionEnabled: false,
+          autolock: true
         });
-
         mendData();
         bindRouters();
       }
@@ -275,6 +275,37 @@ export class TokyoRailwaysComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed', result);
       this.color = result;
+      this.changeBg(result);
     });
+  }
+  changeBg(color: string): void {
+    const cy = document.getElementById('cy')._cyreg.cy;
+    document.getElementById('cy').style.backgroundColor = color;
+    const comp1 = cy.$('edge[company_type = 0]');
+    const comp2 = cy.$('edge[company_type = 1]');
+    const comp3 = cy.$('edge[company_type = 2]');
+    const comArr = [comp1, comp2, comp3];
+    const colorSet1 = ['#1238FF', '#A30CE8', '#FF0000'];
+    const colorSet2 = ['#D98746', '#F276FF', '#6EFF6A'];
+    const colorSet3 = ['#00FFFF', '#00FF33', '#fff'];
+    // cy.edges().classes('edge[company_type = 0]').style('line-color', 'black');
+    // console.log(cy.edges().numericStyle('line-color'));
+    // console.log(cy.edges().classes('edge[company_type = 1]').numericStyle('line-color'));
+    // cy.style().selector('node').style('background-color', color);
+    if (color === 'white') {
+      comp1.style('line-color', colorSet1[0]);
+      comp2.style('line-color', colorSet1[1]);
+      comp3.style('line-color', colorSet1[2]);
+    } else if (color === 'gray') {
+      for (const i of comArr) {
+        comp1.style('line-color', colorSet2[0]);
+        comp2.style('line-color', colorSet2[1]);
+        comp3.style('line-color', colorSet2[2]);
+      }
+    } else {
+      comp1.style('line-color', colorSet3[0]);
+      comp2.style('line-color', colorSet3[1]);
+      comp3.style('line-color', colorSet3[2]);
+    }
   }
 }
