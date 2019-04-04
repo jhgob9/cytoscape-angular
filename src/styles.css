@@ -51,7 +51,20 @@ body.calc #loading {
   display: block;
 }
 
+.mat-drawer-container{
+  z-index: 2;
+}
+
 .mat-list-item.active{
   font-weight: 700;
   background-color: rgba(0, 0, 0, .04);
+}
+
+.popperjs-div {
+	/* just an example */
+	border: 1px solid red;
+	background: #fff;
+	z-index: 9999;
+	padding: 0.25em;
+	pointer-events: none;
 }

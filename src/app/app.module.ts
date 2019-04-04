@@ -32,6 +32,7 @@ import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.comp
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 import { TokyoRailwaysDialogComponent } from './cytoscape/tokyo-railways/tokyo-railways-dialog/tokyo-railways-dialog.component';
 import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
+import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PerformanceTuningComponent } from './cytoscape/performance-tuning/perfo
     ColajsGraphComponent,
     TokyoRailwaysComponent,
     TokyoRailwaysDialogComponent,
-    PerformanceTuningComponent
+    PerformanceTuningComponent,
+    PopperjsExtensionComponent
   ],
   imports: [
     BrowserModule,

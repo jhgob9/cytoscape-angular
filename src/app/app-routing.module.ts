@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
@@ -8,7 +9,7 @@ import { CymainComponent } from './cytoscape/cymain/cymain.component';
 import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.component';
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
-import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
+import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
 
 
 
@@ -35,6 +36,10 @@ const routes: Routes = [
       {
         path: 'performance-tuning',
         component: PerformanceTuningComponent
+      },
+      {
+        path: 'popperjs-extension',
+        component: PopperjsExtensionComponent
       }
     ]
   },
