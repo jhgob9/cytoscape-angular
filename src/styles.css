@@ -68,3 +68,6 @@ body.calc #loading {
 	padding: 0.25em;
 	pointer-events: none;
 }
+.tippy-popper {
+	transition: none !important;
+}

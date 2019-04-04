@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SubtitleService } from 'src/app/services/subtitle.service';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
-  selector: 'app-popperjs-extension',
-  templateUrl: './popperjs-extension.component.html',
-  styleUrls: ['./popperjs-extension.component.css']
+  selector: 'app-popperjs-extension-tippyjs-tooltips',
+  templateUrl: './popperjs-extension-tippyjs-tooltips.component.html',
+  styleUrls: ['./popperjs-extension-tippyjs-tooltips.component.css']
 })
-export class PopperjsExtensionComponent implements OnInit {
+export class PopperjsExtensionTippyjsTooltipsComponent implements OnInit {
   public cy: any;
 
   constructor(
@@ -16,10 +17,11 @@ export class PopperjsExtensionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.SubTitle.subtitle = 'Popper.js extension';
+    this.SubTitle.subtitle = 'Popper.js extension & Tippy.js tooltips';
     let cy = this.cy;
     cy = cytoscape({
       container: document.getElementById('cy'),
+
       style: [
         {
           selector: 'node',
@@ -36,6 +38,7 @@ export class PopperjsExtensionComponent implements OnInit {
           }
         }
       ],
+
       elements: {
         nodes: [
           { data: { id: 'a' } },
@@ -45,57 +48,46 @@ export class PopperjsExtensionComponent implements OnInit {
           { data: { id: 'ab', source: 'a', target: 'b' } }
         ]
       },
+
       layout: {
         name: 'grid'
-      },
-      pan: { x: 0, y: 0 }
+      }
     });
+
     const a = cy.$('#a');
     const b = cy.$('#b');
     const ab = cy.$('#ab');
 
-    const makeDiv = (text: string) => {
+    const codeFn = (text: string) => {
       const div = document.createElement('div');
-      div.classList.add('popperjs-div');
       div.innerHTML = text;
-      document.body.appendChild(div);
       return div;
     };
-
-    const popperA = a.popper({
-      content: () => makeDiv('Sticky position div')
-    });
-
-    const updateA = () => {
-      popperA.scheduleUpdate();
+    const makeTippy = (node: any, text: string) => {
+      return tippy(node.popperRef(), {
+        html: codeFn(text),
+        trigger: 'manual',
+        arrow: true,
+        placement: 'bottom',
+        hideOnClick: false,
+        multiple: true,
+        sticky: true
+      }).tooltips[0];
     };
 
-    a.on('position', updateA);
-    cy.on('pan zoom resize', updateA);
+    const tippyA = makeTippy(a, 'foo');
+    tippyA.show();
 
-    const popperB = b.popper({
-      content: () => makeDiv('One time position div')
-    });
+    const tippyB = makeTippy(b, 'bar');
 
-    /* const updateB = () => {
-      popperB.scheduleUpdate();
-    };
+    tippyB.show();
 
-    b.on('position', updateB);
-    cy.on('pan zoom resize', updateB); */
+    const tippyAB = makeTippy(ab, 'baz');
 
-    const popperAB = ab.popper({
-      content: () => makeDiv('Sticky position div')
-    });
-
-    const updateAB = () => {
-      popperAB.scheduleUpdate();
-    };
-
-    ab.connectedNodes().on('position', updateAB);
-    cy.on('pan zoom resize', updateAB);
+    tippyAB.show();
 
     cy.zoom(1);
     cy.center();
   }
+
 }

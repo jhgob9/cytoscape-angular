@@ -10,7 +10,7 @@ import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.comp
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
 import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
-
+import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
 
 
 const routes: Routes = [
@@ -40,6 +40,10 @@ const routes: Routes = [
       {
         path: 'popperjs-extension',
         component: PopperjsExtensionComponent
+      },
+      {
+        path: 'popperjs-extension-tippyjs-tooltips',
+        component: PopperjsExtensionTippyjsTooltipsComponent
       }
     ]
   },

@@ -7,7 +7,7 @@ import { MatDialog } from '@angular/material';
 
 import { SubtitleService } from 'src/app/services/subtitle.service';
 import { TokyoRailwaysDialogComponent } from './tokyo-railways-dialog/tokyo-railways-dialog.component';
-import { DialogData } from './DialogData';
+// import { DialogData } from './DialogData';
 
 @Component({
   selector: 'app-tokyo-railways',

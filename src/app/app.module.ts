@@ -33,6 +33,7 @@ import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railway
 import { TokyoRailwaysDialogComponent } from './cytoscape/tokyo-railways/tokyo-railways-dialog/tokyo-railways-dialog.component';
 import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
 import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
+import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/poppe
     TokyoRailwaysComponent,
     TokyoRailwaysDialogComponent,
     PerformanceTuningComponent,
-    PopperjsExtensionComponent
+    PopperjsExtensionComponent,
+    PopperjsExtensionTippyjsTooltipsComponent
   ],
   imports: [
     BrowserModule,
