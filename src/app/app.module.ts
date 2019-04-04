@@ -31,6 +31,7 @@ import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatDi
 import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.component';
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 import { TokyoRailwaysDialogComponent } from './cytoscape/tokyo-railways/tokyo-railways-dialog/tokyo-railways-dialog.component';
+import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { TokyoRailwaysDialogComponent } from './cytoscape/tokyo-railways/tokyo-r
     CymainComponent,
     ColajsGraphComponent,
     TokyoRailwaysComponent,
-    TokyoRailwaysDialogComponent
+    TokyoRailwaysDialogComponent,
+    PerformanceTuningComponent
   ],
   imports: [
     BrowserModule,

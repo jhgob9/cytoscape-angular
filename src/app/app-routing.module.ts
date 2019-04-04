@@ -7,7 +7,7 @@ import { StatusComponent } from './components/status/status.component';
 import { CymainComponent } from './cytoscape/cymain/cymain.component';
 import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.component';
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
-
+import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
 import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
 
 
@@ -31,6 +31,10 @@ const routes: Routes = [
       {
         path: 'tokyo-railways',
         component: TokyoRailwaysComponent
+      },
+      {
+        path: 'performance-tuning',
+        component: PerformanceTuningComponent
       }
     ]
   },

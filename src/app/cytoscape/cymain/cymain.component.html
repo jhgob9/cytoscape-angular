@@ -4,8 +4,9 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/cy/colajs-graph']">Cola.js gene-gene graph</a>
-      <a mat-list-item [routerLink]="['/cy/tokyo-railways']">tokyo-railways</a>
+      <a mat-list-item [routerLink]="['/cy/colajs-graph']" routerLinkActive="active">Cola.js gene-gene graph</a>
+      <a mat-list-item [routerLink]="['/cy/tokyo-railways']" routerLinkActive="active">tokyo-railways</a>
+      <a mat-list-item [routerLink]="['/cy/performance-tuning']" routerLinkActive="active">Performance tuning</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
