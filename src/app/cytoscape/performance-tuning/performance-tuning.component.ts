@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { SubtitleService } from 'src/app/services/subtitle.service';
 import { ajax } from 'rxjs/ajax';
 
+declare function removePopper(): any;
+
 @Component({
   selector: 'app-performance-tuning',
   templateUrl: './performance-tuning.component.html',
@@ -17,6 +19,7 @@ export class PerformanceTuningComponent implements OnInit {
   ) { }
 
 	ngOnInit() {
+		removePopper();
 		this.SubTitle.subtitle = 'Performance tuning';
 		const cyFn = () => {
 			const dataGet$ = ajax.getJSON('./assets/performance-tuning/data.json');

@@ -11,6 +11,8 @@ import { pluck } from 'rxjs/operators';
 
 import { SubtitleService } from 'src/app/services/subtitle.service';
 
+declare function removePopper(): any;
+
 @Component({
   selector: 'app-colajs-graph',
   templateUrl: './colajs-graph.component.html',
@@ -25,6 +27,7 @@ export class ColajsGraphComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    removePopper();
     this.SubTitle.subtitle = 'Cola.js gene-gene graph';
     const dataGet = this.http.get('./assets/colajs-graph/data.json');
     const styleGet = this.http.get('./assets/colajs-graph/cy-style.json');

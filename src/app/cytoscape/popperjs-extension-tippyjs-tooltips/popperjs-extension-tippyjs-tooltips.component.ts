@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { SubtitleService } from 'src/app/services/subtitle.service';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
+declare function removePopper(): any;
+
 @Component({
   selector: 'app-popperjs-extension-tippyjs-tooltips',
   templateUrl: './popperjs-extension-tippyjs-tooltips.component.html',
@@ -18,6 +20,7 @@ export class PopperjsExtensionTippyjsTooltipsComponent implements OnInit {
 
   ngOnInit() {
     this.SubTitle.subtitle = 'Popper.js extension & Tippy.js tooltips';
+    removePopper();
     let cy = this.cy;
     cy = cytoscape({
       container: document.getElementById('cy'),

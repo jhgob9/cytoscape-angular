@@ -9,6 +9,8 @@ import { SubtitleService } from 'src/app/services/subtitle.service';
 import { TokyoRailwaysDialogComponent } from './tokyo-railways-dialog/tokyo-railways-dialog.component';
 // import { DialogData } from './DialogData';
 
+declare function removePopper(): any;
+
 @Component({
   selector: 'app-tokyo-railways',
   templateUrl: './tokyo-railways.component.html',
@@ -26,6 +28,7 @@ export class TokyoRailwaysComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    removePopper();
     this.SubTitle.subtitle = 'Tokyo railways';
     const cyFn = () => {
       let cy = this.cy;

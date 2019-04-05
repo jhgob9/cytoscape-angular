@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SubtitleService } from 'src/app/services/subtitle.service';
 
+declare function removePopper(): any;
+
 @Component({
   selector: 'app-popperjs-extension',
   templateUrl: './popperjs-extension.component.html',
@@ -16,6 +18,7 @@ export class PopperjsExtensionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    removePopper();
     this.SubTitle.subtitle = 'Popper.js extension';
     let cy = this.cy;
     cy = cytoscape({

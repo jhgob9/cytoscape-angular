@@ -47,7 +47,8 @@
               "node_modules/cytoscape-popper/cytoscape-popper.js",
               "node_modules/cytoscape-undo-redo/cytoscape-undo-redo.js",
               "node_modules/cytoscape-qtip/cytoscape-qtip.js",
-              "node_modules/cytoscape-view-utilities/cytoscape-view-utilities.js"
+              "node_modules/cytoscape-view-utilities/cytoscape-view-utilities.js",
+              "src/assets/common.js"
             ],
             "es5BrowserSupport": true
           },
