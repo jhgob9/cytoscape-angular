@@ -13,7 +13,7 @@ import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/poppe
 import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
 import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
 import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
-
+import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension/edgehandles-extension.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -54,6 +54,10 @@ const routes: Routes = [
       {
         path: 'cxtmenu-extension',
         component: CxtmenuExtensionComponent
+      },
+      {
+        path: 'edgehandles-extension',
+        component: EdgehandlesExtensionComponent
       }
     ]
   },
