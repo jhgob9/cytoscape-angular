@@ -40,6 +40,7 @@ import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension
 import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.component';
 import { ConcentricLayoutComponent } from './cytoscape/concentric-layout/concentric-layout.component';
 import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.component';
+import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.compone
     EdgehandlesExtensionComponent,
     CircleLayoutComponent,
     ConcentricLayoutComponent,
-    GridLayoutComponent
+    GridLayoutComponent,
+    CoseLayoutComponent
   ],
   imports: [
     BrowserModule,
