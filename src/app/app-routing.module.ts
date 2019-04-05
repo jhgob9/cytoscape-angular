@@ -15,6 +15,7 @@ import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/c
 import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
 import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension/edgehandles-extension.component';
 import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.component';
+import { ConcentricLayoutComponent } from './cytoscape/concentric-layout/concentric-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -63,6 +64,10 @@ const routes: Routes = [
       {
         path: 'circle-layout',
         component: CircleLayoutComponent
+      },
+      {
+        path: 'concentric-layout',
+        component: ConcentricLayoutComponent
       }
     ]
   },

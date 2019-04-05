@@ -6,11 +6,11 @@ import { ajax } from 'rxjs/ajax';
 declare function removePopper(): any;
 
 @Component({
-  selector: 'app-circle-layout',
-  templateUrl: './circle-layout.component.html',
-  styleUrls: ['./circle-layout.component.css']
+  selector: 'app-concentric-layout',
+  templateUrl: './concentric-layout.component.html',
+  styleUrls: ['./concentric-layout.component.css']
 })
-export class CircleLayoutComponent implements OnInit {
+export class ConcentricLayoutComponent implements OnInit {
   public cy: any;
 
   constructor(
@@ -19,10 +19,10 @@ export class CircleLayoutComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.SubTitle.subtitle = 'Circle layout';
+    this.SubTitle.subtitle = 'Concentric layout';
     removePopper();
     let cy = this.cy;
-    const dataGet$ = ajax.getJSON('./assets/circle-layout/data.json');
+    const dataGet$ = ajax.getJSON('./assets/concentric-layout/data.json');
     dataGet$.subscribe(data => {
       cy = cytoscape({
         container: document.getElementById('cy'),
@@ -31,7 +31,13 @@ export class CircleLayoutComponent implements OnInit {
         autounselectify: true,
 
         layout: {
-          name: 'circle'
+          name: 'concentric',
+          concentric: (node: any) => {
+            return node.degree();
+          },
+          levelWidth: (nodes: any) => {
+            return 2;
+          }
         },
 
         style: [
@@ -40,7 +46,7 @@ export class CircleLayoutComponent implements OnInit {
             style: {
               height: 20,
               width: 20,
-              'background-color': '#e8e406'
+              'background-color': '#30c9bc'
             }
           },
 
@@ -51,7 +57,7 @@ export class CircleLayoutComponent implements OnInit {
               'haystack-radius': 0,
               width: 5,
               opacity: 0.5,
-              'line-color': '#f2f08c'
+              'line-color': '#a8eae5'
             }
           }
         ],
@@ -60,4 +66,5 @@ export class CircleLayoutComponent implements OnInit {
       });
     });
   }
+
 }

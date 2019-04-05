@@ -137,9 +137,8 @@ export class EdgehandlesExtensionComponent implements OnInit {
       eh.start(cy.$('node:selected'));
     });
 
-    cy.zoom(1.3);
+    cy.zoom(1.1);
     cy.center();
-    cy.pan({ x: -400, y: -200 });
   }
 
 }
