@@ -12,6 +12,7 @@ import { PerformanceTuningComponent } from './cytoscape/performance-tuning/perfo
 import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
 import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
 import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
+import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
 
 
 const routes: Routes = [
@@ -49,6 +50,10 @@ const routes: Routes = [
       {
         path: 'automove-extension',
         component: CytoscapejsAutomoveComponent
+      },
+      {
+        path: 'cxtmenu-extension',
+        component: CxtmenuExtensionComponent
       }
     ]
   },

@@ -175,8 +175,7 @@ export class CytoscapejsAutomoveComponent implements OnInit {
       reposition: { type: 'outside', x1: 350, x2: 450, y1: 100, y2: 200 }
     });
 
-    cy.zoom(1);
-    cy.center();
+    cy.fit(100); // make sure g is in the viewport for the demo
 
     // .automove-viewport nodes kept in viewport (even if added after this call)
     // convenient but less performant than `nodesMatching: collection`
@@ -205,5 +204,8 @@ export class CytoscapejsAutomoveComponent implements OnInit {
       const tgt = evt.target || evt.cyTarget; // 3.x || 2.x
       tgt.remove();
     });
+
+    cy.zoom(1);
+    cy.center();
   }
 }

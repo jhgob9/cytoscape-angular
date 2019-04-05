@@ -51,6 +51,10 @@ body.calc #loading {
   display: block;
 }
 
+.cxtmenu-disabled {
+	opacity: 0.333;
+}
+
 .mat-drawer-container{
   z-index: 2;
 }

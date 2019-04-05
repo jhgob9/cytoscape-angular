@@ -35,6 +35,7 @@ import { PerformanceTuningComponent } from './cytoscape/performance-tuning/perfo
 import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
 import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
 import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
+import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/c
     PerformanceTuningComponent,
     PopperjsExtensionComponent,
     PopperjsExtensionTippyjsTooltipsComponent,
-    CytoscapejsAutomoveComponent
+    CytoscapejsAutomoveComponent,
+    CxtmenuExtensionComponent
   ],
   imports: [
     BrowserModule,
