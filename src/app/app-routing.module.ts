@@ -11,6 +11,7 @@ import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railway
 import { PerformanceTuningComponent } from './cytoscape/performance-tuning/performance-tuning.component';
 import { PopperjsExtensionComponent } from './cytoscape/popperjs-extension/popperjs-extension.component';
 import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-extension-tippyjs-tooltips/popperjs-extension-tippyjs-tooltips.component';
+import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path: 'popperjs-extension-tippyjs-tooltips',
         component: PopperjsExtensionTippyjsTooltipsComponent
+      },
+      {
+        path: 'automove-extension',
+        component: CytoscapejsAutomoveComponent
       }
     ]
   },
