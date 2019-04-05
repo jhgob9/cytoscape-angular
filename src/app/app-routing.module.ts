@@ -14,6 +14,7 @@ import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-
 import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
 import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
 import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension/edgehandles-extension.component';
+import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -58,6 +59,10 @@ const routes: Routes = [
       {
         path: 'edgehandles-extension',
         component: EdgehandlesExtensionComponent
+      },
+      {
+        path: 'circle-layout',
+        component: CircleLayoutComponent
       }
     ]
   },

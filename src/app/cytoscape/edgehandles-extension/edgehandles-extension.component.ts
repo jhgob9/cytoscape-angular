@@ -139,7 +139,7 @@ export class EdgehandlesExtensionComponent implements OnInit {
 
     cy.zoom(1.3);
     cy.center();
-    cy.pan({ x: -500, y: -200 });
+    cy.pan({ x: -400, y: -200 });
   }
 
 }

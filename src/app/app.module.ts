@@ -37,6 +37,7 @@ import { PopperjsExtensionTippyjsTooltipsComponent } from './cytoscape/popperjs-
 import { CytoscapejsAutomoveComponent } from './cytoscape/cytoscapejs-automove/cytoscapejs-automove.component';
 import { CxtmenuExtensionComponent } from './cytoscape/cxtmenu-extension/cxtmenu-extension.component';
 import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension/edgehandles-extension.component';
+import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { EdgehandlesExtensionComponent } from './cytoscape/edgehandles-extension
     PopperjsExtensionTippyjsTooltipsComponent,
     CytoscapejsAutomoveComponent,
     CxtmenuExtensionComponent,
-    EdgehandlesExtensionComponent
+    EdgehandlesExtensionComponent,
+    CircleLayoutComponent
   ],
   imports: [
     BrowserModule,
