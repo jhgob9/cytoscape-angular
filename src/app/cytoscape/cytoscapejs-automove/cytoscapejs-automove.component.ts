@@ -22,7 +22,7 @@ export class CytoscapejsAutomoveComponent implements OnInit {
     removePopper();
     let cy = this.cy;
     cy = cytoscape({
-      container: document.getElementById('cy'),
+      container: document.getElementById('cyAutomove'),
 
       layout: {
         name: 'preset'

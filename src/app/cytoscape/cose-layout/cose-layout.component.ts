@@ -27,7 +27,7 @@ export class CoseLayoutComponent implements OnInit {
     data$.subscribe(value => {
       let cy = this.cy;
       cy = cytoscape({
-        container: document.getElementById('cy'),
+        container: document.getElementById('cyCose'),
 
         layout: {
           name: 'cose',

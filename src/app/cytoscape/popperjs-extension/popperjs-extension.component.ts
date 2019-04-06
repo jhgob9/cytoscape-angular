@@ -22,7 +22,7 @@ export class PopperjsExtensionComponent implements OnInit {
     this.SubTitle.subtitle = 'Popper.js extension';
     let cy = this.cy;
     cy = cytoscape({
-      container: document.getElementById('cy'),
+      container: document.getElementById('cyPopper'),
       style: [
         {
           selector: 'node',

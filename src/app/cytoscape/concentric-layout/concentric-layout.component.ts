@@ -25,7 +25,7 @@ export class ConcentricLayoutComponent implements OnInit {
     const dataGet$ = ajax.getJSON('./assets/concentric-layout/data.json');
     dataGet$.subscribe(data => {
       cy = cytoscape({
-        container: document.getElementById('cy'),
+        container: document.getElementById('cyConcentric'),
 
         boxSelectionEnabled: false,
         autounselectify: true,

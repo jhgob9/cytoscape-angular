@@ -62,7 +62,7 @@ export class ColajsGraphComponent implements OnInit {
 
       let cy = this.cy;
       cy = cytoscape({
-        container: document.getElementById('cy'),
+        container: document.getElementById('cyColajsGraph'),
         elements: value[0],
         style: value[1],
         layout: { name: 'random' }

@@ -25,7 +25,7 @@ export class CircleLayoutComponent implements OnInit {
     const dataGet$ = ajax.getJSON('./assets/circle-layout/data.json');
     dataGet$.subscribe(data => {
       cy = cytoscape({
-        container: document.getElementById('cy'),
+        container: document.getElementById('cyCircleLayout'),
 
         boxSelectionEnabled: false,
         autounselectify: true,

@@ -77,7 +77,7 @@ export class TokyoRailwaysComponent implements OnInit {
 
         // loading.classList.add('loaded');
         cy = cytoscape({
-          container: document.getElementById('cy'),
+          container: document.getElementById('cyTokyo'),
           layout: { name: 'preset' },
           style: styleJson,
           elements,

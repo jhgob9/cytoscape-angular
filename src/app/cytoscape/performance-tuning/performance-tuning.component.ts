@@ -37,7 +37,7 @@ export class PerformanceTuningComponent implements OnInit {
 
 					// a motion blur effect that increases perceived performance for little or no cost
 					// motionBlur: true,
-					container: document.getElementById('cy'),
+					container: document.getElementById('cyPerformance'),
 					style: cytoscape.stylesheet()
 						.selector('node')
 						.css({

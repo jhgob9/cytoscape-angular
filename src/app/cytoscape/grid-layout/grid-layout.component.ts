@@ -25,7 +25,7 @@ export class GridLayoutComponent implements OnInit {
     const dataGet$ = ajax.getJSON('./assets/grid-layout/data.json');
     dataGet$.subscribe(data => {
       cy = cytoscape({
-        container: document.getElementById('cy'),
+        container: document.getElementById('cyGrid'),
 
         boxSelectionEnabled: false,
         autounselectify: true,

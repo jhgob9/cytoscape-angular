@@ -22,7 +22,7 @@ export class EdgehandlesExtensionComponent implements OnInit {
     removePopper();
     let cy = this.cy;
     cy = cytoscape({
-      container: document.getElementById('cy'),
+      container: document.getElementById('cyEdgehandles'),
 
       layout: {
         name: 'grid',
