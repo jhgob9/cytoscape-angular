@@ -43,6 +43,7 @@ import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.compone
 import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.component';
 import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose-bilkent-layout.component';
 import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-layout-compound/cose-bilkent-layout-compound.component';
+import { ColaLayoutComponent } from './cytoscape/cola-layout/cola-layout.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-lay
     GridLayoutComponent,
     CoseLayoutComponent,
     CoseBilkentLayoutComponent,
-    CoseBilkentLayoutCompoundComponent
+    CoseBilkentLayoutCompoundComponent,
+    ColaLayoutComponent
   ],
   imports: [
     BrowserModule,
