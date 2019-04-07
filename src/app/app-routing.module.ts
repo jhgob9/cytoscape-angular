@@ -19,6 +19,7 @@ import { ConcentricLayoutComponent } from './cytoscape/concentric-layout/concent
 import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.component';
 import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.component';
 import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose-bilkent-layout.component';
+import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-layout-compound/cose-bilkent-layout-compound.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -83,6 +84,10 @@ const routes: Routes = [
       {
         path: 'cose-bilkent-layout',
         component: CoseBilkentLayoutComponent
+      },
+      {
+        path: 'cose-bilkent-layout-compound',
+        component: CoseBilkentLayoutCompoundComponent
       }
     ]
   },
