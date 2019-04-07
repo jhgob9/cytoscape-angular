@@ -41,6 +41,7 @@ import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.c
 import { ConcentricLayoutComponent } from './cytoscape/concentric-layout/concentric-layout.component';
 import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.component';
 import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.component';
+import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose-bilkent-layout.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.compone
     CircleLayoutComponent,
     ConcentricLayoutComponent,
     GridLayoutComponent,
-    CoseLayoutComponent
+    CoseLayoutComponent,
+    CoseBilkentLayoutComponent
   ],
   imports: [
     BrowserModule,

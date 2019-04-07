@@ -4,18 +4,20 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/cy/colajs-graph']" routerLinkActive="active">Cola.js gene-gene graph</a>
-      <a mat-list-item [routerLink]="['/cy/tokyo-railways']" routerLinkActive="active">tokyo-railways</a>
-      <a mat-list-item [routerLink]="['/cy/performance-tuning']" routerLinkActive="active">Performance tuning</a>
-      <a mat-list-item [routerLink]="['/cy/popperjs-extension']" routerLinkActive="active">Popper.js extension</a>
-      <a mat-list-item [routerLink]="['/cy/popperjs-extension-tippyjs-tooltips']" routerLinkActive="active">Popper.js extension & Tippy.js tooltips</a>
-      <a mat-list-item [routerLink]="['/cy/automove-extension']" routerLinkActive="active">Automove extension</a>
-      <a mat-list-item [routerLink]="['/cy/cxtmenu-extension']" routerLinkActive="active">Cxtmenu extension</a>
-      <a mat-list-item [routerLink]="['/cy/edgehandles-extension']" routerLinkActive="active">Edgehandles extension</a>
-      <a mat-list-item [routerLink]="['/cy/circle-layout']" routerLinkActive="active">Circle layout</a>
-      <a mat-list-item [routerLink]="['/cy/concentric-layout']" routerLinkActive="active">Concentric layout</a>
-      <a mat-list-item [routerLink]="['/cy/grid-layout']" routerLinkActive="active">Grid layout</a>
-      <a mat-list-item [routerLink]="['/cy/cose-layout']" routerLinkActive="active">Cose layout</a>
+      <a mat-list-item [routerLink]="['/cy/colajs-graph']" routerLinkActive="active" onclick="removeCy()">Cola.js
+      	gene-gene graph</a>
+      <a mat-list-item [routerLink]="['/cy/tokyo-railways']" routerLinkActive="active" onclick="removeCy()">tokyo-railways</a>
+      <a mat-list-item [routerLink]="['/cy/performance-tuning']" routerLinkActive="active" onclick="removeCy()">Performance tuning</a>
+      <a mat-list-item [routerLink]="['/cy/popperjs-extension']" routerLinkActive="active" onclick="removeCy()">Popper.js extension</a>
+      <a mat-list-item [routerLink]="['/cy/popperjs-extension-tippyjs-tooltips']" routerLinkActive="active" onclick="removeCy()">Popper.js extension & Tippy.js tooltips</a>
+      <a mat-list-item [routerLink]="['/cy/automove-extension']" routerLinkActive="active" onclick="removeCy()">Automove extension</a>
+      <a mat-list-item [routerLink]="['/cy/cxtmenu-extension']" routerLinkActive="active" onclick="removeCy()">Cxtmenu extension</a>
+      <a mat-list-item [routerLink]="['/cy/edgehandles-extension']" routerLinkActive="active" onclick="removeCy()">Edgehandles extension</a>
+      <a mat-list-item [routerLink]="['/cy/circle-layout']" routerLinkActive="active" onclick="removeCy()">Circle layout</a>
+      <a mat-list-item [routerLink]="['/cy/concentric-layout']" routerLinkActive="active" onclick="removeCy()">Concentric layout</a>
+      <a mat-list-item [routerLink]="['/cy/grid-layout']" routerLinkActive="active" onclick="removeCy()">Grid layout</a>
+      <a mat-list-item [routerLink]="['/cy/cose-layout']" routerLinkActive="active" onclick="removeCy()">Cose layout</a>
+      <a mat-list-item [routerLink]="['/cy/cose-bilkent-layout']" routerLinkActive="active" onclick="removeCy()">CoSE Bilkent layout</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

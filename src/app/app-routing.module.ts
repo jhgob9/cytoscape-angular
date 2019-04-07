@@ -18,6 +18,7 @@ import { CircleLayoutComponent } from './cytoscape/circle-layout/circle-layout.c
 import { ConcentricLayoutComponent } from './cytoscape/concentric-layout/concentric-layout.component';
 import { GridLayoutComponent } from './cytoscape/grid-layout/grid-layout.component';
 import { CoseLayoutComponent } from './cytoscape/cose-layout/cose-layout.component';
+import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose-bilkent-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -78,6 +79,10 @@ const routes: Routes = [
       {
         path: 'cose-layout',
         component: CoseLayoutComponent
+      },
+      {
+        path: 'cose-bilkent-layout',
+        component: CoseBilkentLayoutComponent
       }
     ]
   },

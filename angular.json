@@ -38,7 +38,6 @@
               "node_modules/cytoscape-cola/cytoscape-cola.js",
               "node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
               "node_modules/cytoscape-cxtmenu/cytoscape-cxtmenu.js",
-              "node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
               "node_modules/cytoscape-edgehandles/cytoscape-edgehandles.js",
               "node_modules/cytoscape-euler/cytoscape-euler.js",
               "node_modules/cytoscape-expand-collapse/cytoscape-expand-collapse.js",

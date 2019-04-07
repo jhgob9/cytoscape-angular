@@ -282,7 +282,7 @@ export class TokyoRailwaysComponent implements OnInit {
     });
   }
   changeBg(color: string): void {
-    const cy = document.getElementById('cy')._cyreg.cy;
+    const cy = document.getElementById('cyTokyo')._cyreg.cy;
     document.getElementById('cy').style.backgroundColor = color;
     const comp1 = cy.$('edge[company_type = 0]');
     const comp2 = cy.$('edge[company_type = 1]');
