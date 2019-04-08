@@ -1,0 +1,9 @@
+#cyEdgeArrows{
+	width: 100%;
+	height: 100%;
+}
+#hollow{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
