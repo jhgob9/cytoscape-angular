@@ -33,6 +33,7 @@
               "node_modules/tippy.js/dist/tippy.all.min.js",
               "node_modules/popper.js/dist/umd/popper.js",
               "node_modules/cytoscape/dist/cytoscape.min.js",
+              "node_modules/weaverjs/dist/weaver.min.js",
               "node_modules/cytoscape-automove/cytoscape-automove.js",
               "node_modules/cytoscape-canvas/dist/cytoscape-canvas.js",
               "node_modules/cytoscape-cola/cytoscape-cola.js",
@@ -46,6 +47,7 @@
               "node_modules/cytoscape-popper/cytoscape-popper.js",
               "node_modules/cytoscape-undo-redo/cytoscape-undo-redo.js",
               "node_modules/cytoscape-qtip/cytoscape-qtip.js",
+              "node_modules/cytoscape-spread/cytoscape-spread.js",
               "node_modules/cytoscape-view-utilities/cytoscape-view-utilities.js",
               "src/assets/common.js"
             ],

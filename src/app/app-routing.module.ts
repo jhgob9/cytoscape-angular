@@ -23,6 +23,7 @@ import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-lay
 import { ColaLayoutComponent } from './cytoscape/cola-layout/cola-layout.component';
 import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/cola-layout-compound.component';
 import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.component';
+import { SpreadLayoutComponent } from './cytoscape/spread-layout/spread-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -49,7 +50,8 @@ const routes: Routes = [
       { path: 'cose-bilkent-layout-compound', component: CoseBilkentLayoutCompoundComponent },
       { path: 'cola-layout', component: ColaLayoutComponent },
       { path: 'cola-layout-compound', component: ColaLayoutCompoundComponent },
-      { path: 'euler-layout', component: EulerLayoutComponent }
+      { path: 'euler-layout', component: EulerLayoutComponent },
+      { path: 'spread-layout', component: SpreadLayoutComponent }
     ]
   },
   { path: '', component: LandingComponent},
