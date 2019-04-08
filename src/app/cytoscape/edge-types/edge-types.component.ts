@@ -27,7 +27,9 @@ export class EdgeTypesComponent implements OnInit {
 
       layout: {
         name: 'grid',
-        columns: 4
+        columns: 4,
+        fit: true,
+        padding: 60
       },
 
       style: fetch('./assets/edge-types/cy-style.json').then(toJson),

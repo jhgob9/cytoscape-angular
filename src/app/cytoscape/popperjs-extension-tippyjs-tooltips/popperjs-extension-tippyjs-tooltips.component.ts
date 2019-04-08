@@ -89,7 +89,8 @@ export class PopperjsExtensionTippyjsTooltipsComponent implements OnInit {
     tippyAB.show();
 
     cy.zoom(1);
-    cy.center();
+    // cy.center();
+    cy.pan({ x: -100, y: 0 });
   }
 
 }

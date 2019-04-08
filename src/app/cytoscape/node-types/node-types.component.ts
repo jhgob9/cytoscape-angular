@@ -26,7 +26,9 @@ export class NodeTypesComponent implements OnInit {
       container: document.getElementById('cyNodeTypes'),
 
       layout: {
-        name: 'grid'
+        name: 'grid',
+        fit: true,
+        padding: 50
       },
 
       style: fetch('./assets/node-types/cy-style.json').then(toJson),

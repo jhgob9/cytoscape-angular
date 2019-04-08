@@ -99,6 +99,6 @@ export class PopperjsExtensionComponent implements OnInit {
     cy.on('pan zoom resize', updateAB);
 
     cy.zoom(1);
-    cy.center();
+    cy.pan({ x: -100, y: 0 });
   }
 }

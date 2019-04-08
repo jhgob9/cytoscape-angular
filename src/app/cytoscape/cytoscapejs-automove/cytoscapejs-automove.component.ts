@@ -205,7 +205,6 @@ export class CytoscapejsAutomoveComponent implements OnInit {
       tgt.remove();
     });
 
-    cy.zoom(1);
-    cy.center();
+    cy.pan({ x: 0, y: 30 });
   }
 }

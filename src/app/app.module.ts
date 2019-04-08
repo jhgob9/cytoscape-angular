@@ -54,6 +54,7 @@ import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.comp
 import { NodeTypesComponent } from './cytoscape/node-types/node-types.component';
 import { EdgeTypesComponent } from './cytoscape/edge-types/edge-types.component';
 import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.component';
+import { LabelsComponent } from './cytoscape/labels/labels.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.compone
     AnimatedBfsComponent,
     NodeTypesComponent,
     EdgeTypesComponent,
-    EdgeArrowsComponent
+    EdgeArrowsComponent,
+    LabelsComponent
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,9 @@ export class EdgeArrowsComponent implements OnInit {
 
       layout: {
         name: 'grid',
-        columns: 4
+        columns: 4,
+        fit: true,
+        padding: 100
       },
 
       style: fetch('./assets/edge-arrows/cy-style.json').then(toJson),

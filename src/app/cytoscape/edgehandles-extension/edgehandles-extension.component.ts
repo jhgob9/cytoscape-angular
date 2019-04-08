@@ -138,7 +138,8 @@ export class EdgehandlesExtensionComponent implements OnInit {
     });
 
     cy.zoom(1.1);
-    cy.center();
+    // cy.center();
+    cy.pan({ x: -150, y: -100 });
   }
 
 }
