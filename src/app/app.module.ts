@@ -51,6 +51,7 @@ import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.comp
 import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
 import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/breadthfirst-layout.component';
 import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.component';
+import { NodeTypesComponent } from './cytoscape/node-types/node-types.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.comp
     DagreLayoutComponent,
     KlayLayoutComponent,
     BreadthfirstLayoutComponent,
-    AnimatedBfsComponent
+    AnimatedBfsComponent,
+    NodeTypesComponent
   ],
   imports: [
     BrowserModule,

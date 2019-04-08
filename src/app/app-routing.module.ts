@@ -28,6 +28,7 @@ import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.comp
 import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
 import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/breadthfirst-layout.component';
 import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.component';
+import { NodeTypesComponent } from './cytoscape/node-types/node-types.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -59,7 +60,8 @@ const routes: Routes = [
       { path: 'dagre-layout', component: DagreLayoutComponent },
       { path: 'klay-layout', component: KlayLayoutComponent },
       { path: 'breadthfirst-layout', component: BreadthfirstLayoutComponent },
-      { path: 'animated-bfs', component: AnimatedBfsComponent }
+      { path: 'animated-bfs', component: AnimatedBfsComponent },
+      { path: 'node-types', component: NodeTypesComponent }
     ]
   },
   { path: '', component: LandingComponent},
