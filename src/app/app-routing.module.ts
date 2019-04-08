@@ -25,6 +25,7 @@ import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/co
 import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.component';
 import { SpreadLayoutComponent } from './cytoscape/spread-layout/spread-layout.component';
 import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.component';
+import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -53,7 +54,8 @@ const routes: Routes = [
       { path: 'cola-layout-compound', component: ColaLayoutCompoundComponent },
       { path: 'euler-layout', component: EulerLayoutComponent },
       { path: 'spread-layout', component: SpreadLayoutComponent },
-      { path: 'dagre-layout', component: DagreLayoutComponent }
+      { path: 'dagre-layout', component: DagreLayoutComponent },
+      { path: 'klay-layout', component: KlayLayoutComponent }
     ]
   },
   { path: '', component: LandingComponent},

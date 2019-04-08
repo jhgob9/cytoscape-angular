@@ -48,6 +48,7 @@ import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/co
 import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.component';
 import { SpreadLayoutComponent } from './cytoscape/spread-layout/spread-layout.component';
 import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.component';
+import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.comp
     ColaLayoutCompoundComponent,
     EulerLayoutComponent,
     SpreadLayoutComponent,
-    DagreLayoutComponent
+    DagreLayoutComponent,
+    KlayLayoutComponent
   ],
   imports: [
     BrowserModule,
