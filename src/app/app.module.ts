@@ -49,6 +49,7 @@ import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.comp
 import { SpreadLayoutComponent } from './cytoscape/spread-layout/spread-layout.component';
 import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.component';
 import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
+import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/breadthfirst-layout.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.compone
     EulerLayoutComponent,
     SpreadLayoutComponent,
     DagreLayoutComponent,
-    KlayLayoutComponent
+    KlayLayoutComponent,
+    BreadthfirstLayoutComponent
   ],
   imports: [
     BrowserModule,
