@@ -22,6 +22,7 @@ import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose
 import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-layout-compound/cose-bilkent-layout-compound.component';
 import { ColaLayoutComponent } from './cytoscape/cola-layout/cola-layout.component';
 import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/cola-layout-compound.component';
+import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -31,74 +32,24 @@ const routes: Routes = [
     component: CymainComponent,
     canActivate: [AuthGuard],
     children: [
-      {
-        path: '',
-        component: ColajsGraphComponent
-      },
-      {
-        path: 'colajs-graph',
-        component: ColajsGraphComponent
-      },
-      {
-        path: 'tokyo-railways',
-        component: TokyoRailwaysComponent
-      },
-      {
-        path: 'performance-tuning',
-        component: PerformanceTuningComponent
-      },
-      {
-        path: 'popperjs-extension',
-        component: PopperjsExtensionComponent
-      },
-      {
-        path: 'popperjs-extension-tippyjs-tooltips',
-        component: PopperjsExtensionTippyjsTooltipsComponent
-      },
-      {
-        path: 'automove-extension',
-        component: CytoscapejsAutomoveComponent
-      },
-      {
-        path: 'cxtmenu-extension',
-        component: CxtmenuExtensionComponent
-      },
-      {
-        path: 'edgehandles-extension',
-        component: EdgehandlesExtensionComponent
-      },
-      {
-        path: 'circle-layout',
-        component: CircleLayoutComponent
-      },
-      {
-        path: 'concentric-layout',
-        component: ConcentricLayoutComponent
-      },
-      {
-        path: 'grid-layout',
-        component: GridLayoutComponent
-      },
-      {
-        path: 'cose-layout',
-        component: CoseLayoutComponent
-      },
-      {
-        path: 'cose-bilkent-layout',
-        component: CoseBilkentLayoutComponent
-      },
-      {
-        path: 'cose-bilkent-layout-compound',
-        component: CoseBilkentLayoutCompoundComponent
-      },
-      {
-        path: 'cola-layout',
-        component: ColaLayoutComponent
-      },
-      {
-        path: 'cola-layout-compound',
-        component: ColaLayoutCompoundComponent
-      }
+      { path: '', component: ColajsGraphComponent },
+      { path: 'colajs-graph', component: ColajsGraphComponent },
+      { path: 'tokyo-railways', component: TokyoRailwaysComponent },
+      { path: 'performance-tuning', component: PerformanceTuningComponent },
+      { path: 'popperjs-extension', component: PopperjsExtensionComponent },
+      { path: 'popperjs-extension-tippyjs-tooltips', component: PopperjsExtensionTippyjsTooltipsComponent },
+      { path: 'automove-extension', component: CytoscapejsAutomoveComponent },
+      { path: 'cxtmenu-extension', component: CxtmenuExtensionComponent },
+      { path: 'edgehandles-extension', component: EdgehandlesExtensionComponent },
+      { path: 'circle-layout', component: CircleLayoutComponent },
+      { path: 'concentric-layout', component: ConcentricLayoutComponent },
+      { path: 'grid-layout', component: GridLayoutComponent },
+      { path: 'cose-layout', component: CoseLayoutComponent },
+      { path: 'cose-bilkent-layout', component: CoseBilkentLayoutComponent },
+      { path: 'cose-bilkent-layout-compound', component: CoseBilkentLayoutCompoundComponent },
+      { path: 'cola-layout', component: ColaLayoutComponent },
+      { path: 'cola-layout-compound', component: ColaLayoutCompoundComponent },
+      { path: 'euler-layout', component: EulerLayoutComponent }
     ]
   },
   { path: '', component: LandingComponent},

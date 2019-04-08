@@ -45,6 +45,7 @@ import { CoseBilkentLayoutComponent } from './cytoscape/cose-bilkent-layout/cose
 import { CoseBilkentLayoutCompoundComponent } from './cytoscape/cose-bilkent-layout-compound/cose-bilkent-layout-compound.component';
 import { ColaLayoutComponent } from './cytoscape/cola-layout/cola-layout.component';
 import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/cola-layout-compound.component';
+import { EulerLayoutComponent } from './cytoscape/euler-layout/euler-layout.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { ColaLayoutCompoundComponent } from './cytoscape/cola-layout-compound/co
     CoseBilkentLayoutComponent,
     CoseBilkentLayoutCompoundComponent,
     ColaLayoutComponent,
-    ColaLayoutCompoundComponent
+    ColaLayoutCompoundComponent,
+    EulerLayoutComponent
   ],
   imports: [
     BrowserModule,
