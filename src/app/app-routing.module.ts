@@ -33,6 +33,7 @@ import { EdgeTypesComponent } from './cytoscape/edge-types/edge-types.component'
 import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.component';
 import { LabelsComponent } from './cytoscape/labels/labels.component';
 import { CompoundNodesComponent } from './cytoscape/compound-nodes/compound-nodes.component';
+import { LinkoutComponent } from './cytoscape/linkout/linkout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -69,7 +70,8 @@ const routes: Routes = [
       { path: 'edge-types', component: EdgeTypesComponent },
       { path: 'edge-arrows', component: EdgeArrowsComponent },
       { path: 'labels', component: LabelsComponent },
-      { path: 'compound-nodes', component: CompoundNodesComponent }
+      { path: 'compound-nodes', component: CompoundNodesComponent },
+      { path: 'linkout', component: LinkoutComponent }
     ]
   },
   { path: '', component: LandingComponent},
