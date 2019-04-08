@@ -50,6 +50,7 @@ import { SpreadLayoutComponent } from './cytoscape/spread-layout/spread-layout.c
 import { DagreLayoutComponent } from './cytoscape/dagre-layout/dagre-layout.component';
 import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.component';
 import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/breadthfirst-layout.component';
+import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/bre
     SpreadLayoutComponent,
     DagreLayoutComponent,
     KlayLayoutComponent,
-    BreadthfirstLayoutComponent
+    BreadthfirstLayoutComponent,
+    AnimatedBfsComponent
   ],
   imports: [
     BrowserModule,
