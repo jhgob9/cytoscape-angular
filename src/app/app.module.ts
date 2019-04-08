@@ -55,6 +55,8 @@ import { NodeTypesComponent } from './cytoscape/node-types/node-types.component'
 import { EdgeTypesComponent } from './cytoscape/edge-types/edge-types.component';
 import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.component';
 import { LabelsComponent } from './cytoscape/labels/labels.component';
+import { CompoundNodesComponent } from './cytoscape/compound-nodes/compound-nodes.component';
+import { LinkoutComponent } from './cytoscape/linkout/linkout.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +93,9 @@ import { LabelsComponent } from './cytoscape/labels/labels.component';
     NodeTypesComponent,
     EdgeTypesComponent,
     EdgeArrowsComponent,
-    LabelsComponent
+    LabelsComponent,
+    CompoundNodesComponent,
+    LinkoutComponent
   ],
   imports: [
     BrowserModule,
