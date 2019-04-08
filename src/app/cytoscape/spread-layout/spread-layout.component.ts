@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SubtitleService } from 'src/app/services/subtitle.service';
-import { ajax } from 'rxjs/ajax';
 
 declare function removePopper(): any;
 
