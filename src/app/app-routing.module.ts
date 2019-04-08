@@ -34,6 +34,7 @@ import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.compone
 import { LabelsComponent } from './cytoscape/labels/labels.component';
 import { CompoundNodesComponent } from './cytoscape/compound-nodes/compound-nodes.component';
 import { LinkoutComponent } from './cytoscape/linkout/linkout.component';
+import { PieStyleComponent } from './cytoscape/pie-style/pie-style.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -71,7 +72,8 @@ const routes: Routes = [
       { path: 'edge-arrows', component: EdgeArrowsComponent },
       { path: 'labels', component: LabelsComponent },
       { path: 'compound-nodes', component: CompoundNodesComponent },
-      { path: 'linkout', component: LinkoutComponent }
+      { path: 'linkout', component: LinkoutComponent },
+      { path: 'pie-style', component: PieStyleComponent }
     ]
   },
   { path: '', component: LandingComponent},

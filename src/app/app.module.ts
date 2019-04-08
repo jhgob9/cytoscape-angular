@@ -57,6 +57,7 @@ import { EdgeArrowsComponent } from './cytoscape/edge-arrows/edge-arrows.compone
 import { LabelsComponent } from './cytoscape/labels/labels.component';
 import { CompoundNodesComponent } from './cytoscape/compound-nodes/compound-nodes.component';
 import { LinkoutComponent } from './cytoscape/linkout/linkout.component';
+import { PieStyleComponent } from './cytoscape/pie-style/pie-style.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { LinkoutComponent } from './cytoscape/linkout/linkout.component';
     EdgeArrowsComponent,
     LabelsComponent,
     CompoundNodesComponent,
-    LinkoutComponent
+    LinkoutComponent,
+    PieStyleComponent
   ],
   imports: [
     BrowserModule,
