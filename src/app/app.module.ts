@@ -52,6 +52,7 @@ import { KlayLayoutComponent } from './cytoscape/klay-layout/klay-layout.compone
 import { BreadthfirstLayoutComponent } from './cytoscape/breadthfirst-layout/breadthfirst-layout.component';
 import { AnimatedBfsComponent } from './cytoscape/animated-bfs/animated-bfs.component';
 import { NodeTypesComponent } from './cytoscape/node-types/node-types.component';
+import { EdgeTypesComponent } from './cytoscape/edge-types/edge-types.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { NodeTypesComponent } from './cytoscape/node-types/node-types.component'
     KlayLayoutComponent,
     BreadthfirstLayoutComponent,
     AnimatedBfsComponent,
-    NodeTypesComponent
+    NodeTypesComponent,
+    EdgeTypesComponent
   ],
   imports: [
     BrowserModule,
