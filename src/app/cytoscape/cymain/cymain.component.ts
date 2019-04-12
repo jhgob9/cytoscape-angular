@@ -20,6 +20,7 @@ export class CymainComponent implements OnInit {
   .pipe(
     map(result => result.matches)
   );
+  panelOpenState = false;
   constructor(
     private store: Store<AppState>,
     public SubTitle: SubtitleService,

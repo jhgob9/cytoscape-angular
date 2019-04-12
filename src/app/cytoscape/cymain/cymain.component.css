@@ -1,9 +1,9 @@
-.sidenav-container {
+.sidenav_container {
   height: 100%;
 }
 
 .sidenav {
-  width: 200px;
+  width: 300px;
 }
 
 .sidenav .mat-toolbar {
@@ -21,4 +21,17 @@
   right:10px;
   top:14px;
   z-index: 1;
+}
+
+.side_accordion >.mat-expansion-panel {
+  margin: 0 10px;
+}
+::ng-deep .side_accordion .mat-expansion-panel-body {
+  padding:0 10px 10px;
+}
+::ng-deep .mat-list-base .mat-list-item{
+  padding: 0 16px;
+}
+::ng-deep .mat-list-base .mat-list-item:not(a) >.mat-list-item-content {
+  padding:0 !important;
 }

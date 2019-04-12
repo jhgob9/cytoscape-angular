@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
+
 import { EffectsModule } from '@ngrx/effects';
 import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
@@ -21,13 +23,16 @@ import {TokenInterceptor, ErrorInterceptor} from './services/token.interceptor';
 import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatDialogModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 import { StatusComponent } from './components/status/status.component';
 import { CymainComponent } from './cytoscape/cymain/cymain.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatDialogModule } from '@angular/material';
+
 import { ColajsGraphComponent } from './cytoscape/colajs-graph/colajs-graph.component';
 import { TokyoRailwaysComponent } from './cytoscape/tokyo-railways/tokyo-railways.component';
 import { TokyoRailwaysDialogComponent } from './cytoscape/tokyo-railways/tokyo-railways-dialog/tokyo-railways-dialog.component';
@@ -116,7 +121,8 @@ import { PieStyleComponent } from './cytoscape/pie-style/pie-style.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatExpansionModule
   ],
   providers: [
     AuthService,
